@@ -1,0 +1,106 @@
+[gd_scene load_steps=16 format=3 uid="uid://dywrdc6orm1r4"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qa3sr"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_ky742"]
+sky_material = SubResource("ProceduralSkyMaterial_qa3sr")
+
+[sub_resource type="Environment" id="Environment_xykwm"]
+background_mode = 2
+sky = SubResource("Sky_ky742")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jtpc5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_f2gpn"]
+size = Vector2(10, 120)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_725w0"]
+size = Vector2(150, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_l8r1y"]
+size = Vector2(60, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_q6p4l"]
+size = Vector2(10, 100)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ja32e"]
+size = Vector2(10, 70)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_8ajxd"]
+size = Vector2(40, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_2jcnf"]
+size = Vector2(10, 20)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_4krgv"]
+size = Vector2(10, 5)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_jyy1t"]
+size = Vector2(5, 35)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_m7rai"]
+size = Vector2(60, 10)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g32ty"]
+size = Vector2(10, 40)
+
+[node name="World" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0427761, 0, -0.017807)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xykwm")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.866025, -0.5, 0, 0.5, 0.866025, 1, 3.78552e-08, -2.18557e-08, -80, 30, 0)
+shadow_enabled = true
+
+[node name="Capsule" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7481, 0.991399, 0)
+mesh = SubResource("CapsuleMesh_jtpc5")
+
+[node name="MainRoad" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_f2gpn")
+
+[node name="LongRoad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -65)
+mesh = SubResource("PlaneMesh_725w0")
+
+[node name="FootballRoad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 35)
+mesh = SubResource("PlaneMesh_l8r1y")
+
+[node name="EasternRoad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0, -10)
+mesh = SubResource("PlaneMesh_q6p4l")
+
+[node name="SouthernRoad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, -105)
+mesh = SubResource("PlaneMesh_ja32e")
+
+[node name="Alameda" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 5)
+mesh = SubResource("PlaneMesh_8ajxd")
+
+[node name="AlamedaMini" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, -10)
+mesh = SubResource("PlaneMesh_2jcnf")
+
+[node name="VeredillaMini" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -17.5)
+mesh = SubResource("PlaneMesh_4krgv")
+
+[node name="Veredilla" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.5, 0, -37.5)
+mesh = SubResource("PlaneMesh_jyy1t")
+
+[node name="OlivoRoad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -115)
+mesh = SubResource("PlaneMesh_m7rai")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -90)
+mesh = SubResource("PlaneMesh_g32ty")
