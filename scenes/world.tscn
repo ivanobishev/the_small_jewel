@@ -1,4 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://dywrdc6orm1r4"]
+[gd_scene load_steps=39 format=3 uid="uid://dywrdc6orm1r4"]
+
+[ext_resource type="PackedScene" uid="uid://deyei7nyvcj50" path="res://scenes/car.tscn" id="1_gfv0a"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qa3sr"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -15,38 +17,115 @@ glow_enabled = true
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jtpc5"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4ybs"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_f2gpn"]
+material = SubResource("StandardMaterial3D_n4ybs")
 size = Vector2(10, 120)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_vy3uv"]
+data = PackedVector3Array(5, 0, 60, -5, 0, 60, 5, 0, -60, -5, 0, 60, -5, 0, -60, 5, 0, -60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8fns"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_725w0"]
+material = SubResource("StandardMaterial3D_c8fns")
 size = Vector2(150, 10)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_inntm"]
+data = PackedVector3Array(75, 0, 5, -75, 0, 5, 75, 0, -5, -75, 0, 5, -75, 0, -5, 75, 0, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_be0uu"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_l8r1y"]
+material = SubResource("StandardMaterial3D_be0uu")
 size = Vector2(60, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oys10"]
+data = PackedVector3Array(30, 0, 5, -30, 0, 5, 30, 0, -5, -30, 0, 5, -30, 0, -5, 30, 0, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pvsnu"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_q6p4l"]
+material = SubResource("StandardMaterial3D_pvsnu")
 size = Vector2(10, 100)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4qw2p"]
+data = PackedVector3Array(5, 0, 50, -5, 0, 50, 5, 0, -50, -5, 0, 50, -5, 0, -50, 5, 0, -50)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n0807"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_ja32e"]
+material = SubResource("StandardMaterial3D_n0807")
 size = Vector2(10, 70)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_7kuwo"]
+data = PackedVector3Array(5, 0, 35, -5, 0, 35, 5, 0, -35, -5, 0, 35, -5, 0, -35, 5, 0, -35)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uympd"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_8ajxd"]
+material = SubResource("StandardMaterial3D_uympd")
 size = Vector2(40, 10)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_28nxu"]
+data = PackedVector3Array(20, 0, 5, -20, 0, 5, 20, 0, -5, -20, 0, 5, -20, 0, -5, 20, 0, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_opic0"]
+albedo_color = Color(0.870588, 0.721569, 0.529412, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_2jcnf"]
+material = SubResource("StandardMaterial3D_opic0")
 size = Vector2(10, 20)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_k32qn"]
+data = PackedVector3Array(5, 0, 10, -5, 0, 10, 5, 0, -10, -5, 0, 10, -5, 0, -10, 5, 0, -10)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8e03h"]
+albedo_color = Color(0.870588, 0.721569, 0.529412, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_4krgv"]
+material = SubResource("StandardMaterial3D_8e03h")
 size = Vector2(10, 5)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_l4573"]
+data = PackedVector3Array(5, 0, 2.5, -5, 0, 2.5, 5, 0, -2.5, -5, 0, 2.5, -5, 0, -2.5, 5, 0, -2.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4uvjg"]
+albedo_color = Color(0.870588, 0.721569, 0.529412, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_jyy1t"]
+material = SubResource("StandardMaterial3D_4uvjg")
 size = Vector2(5, 35)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qk1y7"]
+data = PackedVector3Array(2.5, 0, 17.5, -2.5, 0, 17.5, 2.5, 0, -17.5, -2.5, 0, 17.5, -2.5, 0, -17.5, 2.5, 0, -17.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ajadp"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_m7rai"]
+material = SubResource("StandardMaterial3D_ajadp")
 size = Vector2(60, 10)
 
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_70k5a"]
+data = PackedVector3Array(30, 0, 5, -30, 0, 5, 30, 0, -5, -30, 0, 5, -30, 0, -5, 30, 0, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k17bj"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_g32ty"]
+material = SubResource("StandardMaterial3D_k17bj")
 size = Vector2(10, 40)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_svhn1"]
+data = PackedVector3Array(5, 0, 20, -5, 0, 20, 5, 0, -20, -5, 0, 20, -5, 0, -20, 5, 0, -20)
 
 [node name="World" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0427761, 0, -0.017807)
@@ -59,48 +138,106 @@ transform = Transform3D(-4.37114e-08, 0.866025, -0.5, 0, 0.5, 0.866025, 1, 3.785
 shadow_enabled = true
 
 [node name="Capsule" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7481, 0.991399, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7481, 0.991399, -1.80958)
 mesh = SubResource("CapsuleMesh_jtpc5")
 
 [node name="MainRoad" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_f2gpn")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="MainRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MainRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_vy3uv")
+
 [node name="LongRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -65)
 mesh = SubResource("PlaneMesh_725w0")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LongRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LongRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_inntm")
 
 [node name="FootballRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 35)
 mesh = SubResource("PlaneMesh_l8r1y")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="FootballRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FootballRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_oys10")
+
 [node name="EasternRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0, -10)
 mesh = SubResource("PlaneMesh_q6p4l")
 
-[node name="SouthernRoad" type="MeshInstance3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="EasternRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EasternRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4qw2p")
+
+[node name="VentaRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0, -105)
 mesh = SubResource("PlaneMesh_ja32e")
 
-[node name="Alameda" type="MeshInstance3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="VentaRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VentaRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_7kuwo")
+
+[node name="AlamedaRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 5)
 mesh = SubResource("PlaneMesh_8ajxd")
 
-[node name="AlamedaMini" type="MeshInstance3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="AlamedaRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AlamedaRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_28nxu")
+
+[node name="Alameda" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, -10)
 mesh = SubResource("PlaneMesh_2jcnf")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Alameda"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Alameda/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_k32qn")
 
 [node name="VeredillaMini" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -17.5)
 mesh = SubResource("PlaneMesh_4krgv")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="VeredillaMini"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="VeredillaMini/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_l4573")
+
 [node name="Veredilla" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.5, 0, -37.5)
 mesh = SubResource("PlaneMesh_jyy1t")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Veredilla"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Veredilla/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qk1y7")
 
 [node name="OlivoRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -115)
 mesh = SubResource("PlaneMesh_m7rai")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="OlivoRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="OlivoRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_70k5a")
+
+[node name="AntonitaRoad" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -90)
 mesh = SubResource("PlaneMesh_g32ty")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AntonitaRoad"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AntonitaRoad/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_svhn1")
+
+[node name="Car" parent="." instance=ExtResource("1_gfv0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.29452, -2.05042)

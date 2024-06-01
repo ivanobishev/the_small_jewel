@@ -1,5 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717090386
+::res://::1717221343
 icon.svg::CompressedTexture2D::6566921153340034117::1716911109::1716911115::1::::<><>::
-::res://scenes/::1716997596
-world.tscn::PackedScene::8890248308835093175::1716997596::0::1::::<><>::
+::res://scenes/::1717190264
+car.tscn::PackedScene::7489821347999437657::1717190264::0::1::::<><>::res://scripts/car.gd
+world.tscn::PackedScene::8890248308835093175::1717190264::0::1::::<><>::uid://deyei7nyvcj50::::res://scenes/car.tscn
+::res://scripts/::1717190261
+car.gd::GDScript::-1::1717190261::0::1::::<>VehicleBody3D<>::
