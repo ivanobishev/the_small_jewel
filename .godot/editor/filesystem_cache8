@@ -1,8 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717221343
+::res://::1717357708
 icon.svg::CompressedTexture2D::6566921153340034117::1716911109::1716911115::1::::<><>::
-::res://scenes/::1717190264
-car.tscn::PackedScene::7489821347999437657::1717190264::0::1::::<><>::res://scripts/car.gd
-world.tscn::PackedScene::8890248308835093175::1717190264::0::1::::<><>::uid://deyei7nyvcj50::::res://scenes/car.tscn
+::res://models/::1717358163
+bench.blend::PackedScene::7287134797830065575::1717354139::1717354145::1::::<><>::
+fountain.blend::PackedScene::703914250146550538::1717358163::1717358170::1::::<><>::
+stop_sign.blend::PackedScene::1366622493758043468::1717351858::1717351877::1::::<><>::
+::res://scenes/::1717358052
+car.tscn::PackedScene::7489821347999437657::1717358052::0::1::::<><>::res://scripts/car.gd
+world.tscn::PackedScene::8890248308835093175::1717358052::0::1::::<><>::uid://deyei7nyvcj50::::res://scenes/car.tscn<>uid://tqacqftqj0pc::::res://models/stop_sign.blend<>uid://db27bssvhkjqd::::res://models/bench.blend<>uid://ka8mn1lhl2la::::res://models/fountain.blend
 ::res://scripts/::1717190261
 car.gd::GDScript::-1::1717190261::0::1::::<>VehicleBody3D<>::

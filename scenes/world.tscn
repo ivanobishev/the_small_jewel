@@ -1,6 +1,9 @@
-[gd_scene load_steps=39 format=3 uid="uid://dywrdc6orm1r4"]
+[gd_scene load_steps=51 format=3 uid="uid://dywrdc6orm1r4"]
 
 [ext_resource type="PackedScene" uid="uid://deyei7nyvcj50" path="res://scenes/car.tscn" id="1_gfv0a"]
+[ext_resource type="PackedScene" uid="uid://tqacqftqj0pc" path="res://models/stop_sign.blend" id="2_bv4g3"]
+[ext_resource type="PackedScene" uid="uid://db27bssvhkjqd" path="res://models/bench.blend" id="3_cwhwe"]
+[ext_resource type="PackedScene" uid="uid://ka8mn1lhl2la" path="res://models/fountain.blend" id="4_qe56s"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_qa3sr"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -127,6 +130,36 @@ size = Vector2(10, 40)
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_svhn1"]
 data = PackedVector3Array(5, 0, 20, -5, 0, 20, 5, 0, -20, -5, 0, 20, -5, 0, -20, 5, 0, -20)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hvycj"]
+albedo_color = Color(0.486275, 0.486275, 0.486275, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_v57t4"]
+material = SubResource("StandardMaterial3D_hvycj")
+size = Vector2(15, 5)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mqxw7"]
+data = PackedVector3Array(7.5, 0, 2.5, -7.5, 0, 2.5, 7.5, 0, -2.5, -7.5, 0, 2.5, -7.5, 0, -2.5, 7.5, 0, -2.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mrn1q"]
+albedo_color = Color(0.560784, 0.435294, 0.305882, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pivu4"]
+material = SubResource("StandardMaterial3D_mrn1q")
+size = Vector3(60, 0.2, 90)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_5npil"]
+data = PackedVector3Array(-30, 0.1, 45, 30, 0.1, 45, -30, -0.1, 45, 30, 0.1, 45, 30, -0.1, 45, -30, -0.1, 45, 30, 0.1, -45, -30, 0.1, -45, 30, -0.1, -45, -30, 0.1, -45, -30, -0.1, -45, 30, -0.1, -45, 30, 0.1, 45, 30, 0.1, -45, 30, -0.1, 45, 30, 0.1, -45, 30, -0.1, -45, 30, -0.1, 45, -30, 0.1, -45, -30, 0.1, 45, -30, -0.1, -45, -30, 0.1, 45, -30, -0.1, 45, -30, -0.1, -45, 30, 0.1, 45, -30, 0.1, 45, 30, 0.1, -45, -30, 0.1, 45, -30, 0.1, -45, 30, 0.1, -45, -30, -0.1, 45, 30, -0.1, 45, -30, -0.1, -45, 30, -0.1, 45, 30, -0.1, -45, -30, -0.1, -45)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nc5w8"]
+albedo_color = Color(0.247059, 0.341176, 0.133333, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_dehbp"]
+material = SubResource("StandardMaterial3D_nc5w8")
+size = Vector3(50, 0.2, 40)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4cd1j"]
+data = PackedVector3Array(-25, 0.1, 20, 25, 0.1, 20, -25, -0.1, 20, 25, 0.1, 20, 25, -0.1, 20, -25, -0.1, 20, 25, 0.1, -20, -25, 0.1, -20, 25, -0.1, -20, -25, 0.1, -20, -25, -0.1, -20, 25, -0.1, -20, 25, 0.1, 20, 25, 0.1, -20, 25, -0.1, 20, 25, 0.1, -20, 25, -0.1, -20, 25, -0.1, 20, -25, 0.1, -20, -25, 0.1, 20, -25, -0.1, -20, -25, 0.1, 20, -25, -0.1, 20, -25, -0.1, -20, 25, 0.1, 20, -25, 0.1, 20, 25, 0.1, -20, -25, 0.1, 20, -25, 0.1, -20, 25, 0.1, -20, -25, -0.1, 20, 25, -0.1, 20, -25, -0.1, -20, 25, -0.1, 20, 25, -0.1, -20, -25, -0.1, -20)
+
 [node name="World" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0427761, 0, -0.017807)
 
@@ -138,8 +171,11 @@ transform = Transform3D(-4.37114e-08, 0.866025, -0.5, 0, 0.5, 0.866025, 1, 3.785
 shadow_enabled = true
 
 [node name="Capsule" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7481, 0.991399, -1.80958)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.2138, 0.991399, -73.9136)
 mesh = SubResource("CapsuleMesh_jtpc5")
+
+[node name="Car" parent="." instance=ExtResource("1_gfv0a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.151, 1.29452, -80.863)
 
 [node name="MainRoad" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_f2gpn")
@@ -239,5 +275,47 @@ mesh = SubResource("PlaneMesh_g32ty")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AntonitaRoad/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_svhn1")
 
-[node name="Car" parent="." instance=ExtResource("1_gfv0a")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.29452, -2.05042)
+[node name="BankSquare" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -57.5)
+mesh = SubResource("PlaneMesh_v57t4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="BankSquare"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BankSquare/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_mqxw7")
+
+[node name="CityHallGround" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.1, -15)
+mesh = SubResource("BoxMesh_pivu4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CityHallGround"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CityHallGround/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_5npil")
+
+[node name="EraGround" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0.1, -90)
+mesh = SubResource("BoxMesh_dehbp")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EraGround"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EraGround/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4cd1j")
+
+[node name="Stop1" parent="." instance=ExtResource("2_bv4g3")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.51411, 0, -71.0826)
+
+[node name="Stop2" parent="." instance=ExtResource("2_bv4g3")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -54.5151, 1.90735e-06, -70.7586)
+
+[node name="Stop3" parent="." instance=ExtResource("2_bv4g3")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -5.87536, 4.76837e-07, 39.4057)
+
+[node name="Stop4" parent="." instance=ExtResource("2_bv4g3")]
+transform = Transform3D(0.0174524, 0, 0.999848, 0, 1, 0, -0.999848, 0, 0.0174524, 5.71817, 0, 0.766364)
+
+[node name="Bench1" parent="." instance=ExtResource("3_cwhwe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0142, 0.2, -55.2349)
+
+[node name="Fountain" parent="." instance=ExtResource("4_qe56s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -64)
