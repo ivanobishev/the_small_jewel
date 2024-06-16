@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://db27bssvhkjqd"
-path="res://.godot/imported/bench.blend-9052db59d1c3e95795785fa7ebe12017.scn"
+uid="uid://tqacqftqj0pc"
+path="res://.godot/imported/stop_sign.blend-69df1ca2791f2d008fdefb749d67ce6e.scn"
 
 [deps]
 
-source_file="res://models/bench.blend"
-dest_files=["res://.godot/imported/bench.blend-9052db59d1c3e95795785fa7ebe12017.scn"]
+source_file="res://assets/stop_sign.blend"
+dest_files=["res://.godot/imported/stop_sign.blend-69df1ca2791f2d008fdefb749d67ce6e.scn"]
 
 [params]
 

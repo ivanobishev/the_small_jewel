@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bm2rc6etpoqf1"
-path="res://.godot/imported/city_hall.blend-2437649c98c1f44a5c140ab31a666ca9.scn"
+uid="uid://jyo14vcc3rkg"
+path="res://.godot/imported/bush.blend-b6a3b9e8356aff6910eb31fe0cd9de8e.scn"
 
 [deps]
 
-source_file="res://models/city_hall.blend"
-dest_files=["res://.godot/imported/city_hall.blend-2437649c98c1f44a5c140ab31a666ca9.scn"]
+source_file="res://assets/bush.blend"
+dest_files=["res://.godot/imported/bush.blend-b6a3b9e8356aff6910eb31fe0cd9de8e.scn"]
 
 [params]
 

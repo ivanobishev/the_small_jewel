@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dudhewfg6r6ne"
-path="res://.godot/imported/car_offroad.blend-0a99ce0d4bbb8932147aa129ee79e2c3.scn"
+uid="uid://db27bssvhkjqd"
+path="res://.godot/imported/bench.blend-7f0ed641b9746bf2914fb7bd64c4b1e6.scn"
 
 [deps]
 
-source_file="res://models/car_offroad.blend"
-dest_files=["res://.godot/imported/car_offroad.blend-0a99ce0d4bbb8932147aa129ee79e2c3.scn"]
+source_file="res://assets/bench.blend"
+dest_files=["res://.godot/imported/bench.blend-7f0ed641b9746bf2914fb7bd64c4b1e6.scn"]
 
 [params]
 

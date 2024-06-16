@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bvnruiajwgg63"
-path="res://.godot/imported/terrace_table.blend-1ebc06b1433b106d3d118700101d5d65.scn"
+path="res://.godot/imported/terrace_table.blend-70d44148644bda531f974bf5a0ab2683.scn"
 
 [deps]
 
-source_file="res://models/terrace_table.blend"
-dest_files=["res://.godot/imported/terrace_table.blend-1ebc06b1433b106d3d118700101d5d65.scn"]
+source_file="res://assets/terrace_table.blend"
+dest_files=["res://.godot/imported/terrace_table.blend-70d44148644bda531f974bf5a0ab2683.scn"]
 
 [params]
 

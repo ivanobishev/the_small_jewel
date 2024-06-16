@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://tqacqftqj0pc"
-path="res://.godot/imported/stop_sign.blend-934a8c62c9d04f5e9b4342a00acaad80.scn"
+uid="uid://bm2rc6etpoqf1"
+path="res://.godot/imported/city_hall.blend-f7de73193ddd4882654972e452b1a564.scn"
 
 [deps]
 
-source_file="res://models/stop_sign.blend"
-dest_files=["res://.godot/imported/stop_sign.blend-934a8c62c9d04f5e9b4342a00acaad80.scn"]
+source_file="res://assets/city_hall.blend"
+dest_files=["res://.godot/imported/city_hall.blend-f7de73193ddd4882654972e452b1a564.scn"]
 
 [params]
 

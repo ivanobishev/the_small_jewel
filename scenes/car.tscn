@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://deyei7nyvcj50"]
 
 [ext_resource type="Script" path="res://scripts/car.gd" id="1_mbmiy"]
-[ext_resource type="PackedScene" uid="uid://dudhewfg6r6ne" path="res://models/car_offroad.blend" id="2_bw52b"]
+[ext_resource type="PackedScene" uid="uid://dudhewfg6r6ne" path="res://assets/car_offroad.blend" id="2_bw52b"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bgot8"]
 albedo_color = Color(0, 0, 0, 1)
@@ -74,5 +74,5 @@ transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 
 mesh = SubResource("CylinderMesh_ev6n2")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.166878, -0.157062)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14, -0.157)
 shape = SubResource("ConvexPolygonShape3D_t81ro")

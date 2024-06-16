@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://v75nnykounn7"]
+
+[ext_resource type="PackedScene" uid="uid://ka8mn1lhl2la" path="res://assets/fountain.blend" id="1_in7rq"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_my3mb"]
+height = 1.0
+radius = 1.7
+
+[node name="Fountain" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CylinderShape3D_my3mb")
+
+[node name="fountain" parent="." instance=ExtResource("1_in7rq")]
