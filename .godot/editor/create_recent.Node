@@ -1,12 +1,1 @@
-CollisionShape3D
-Area3D
-AnimationPlayer
 MeshInstance3D
-Node3D
-RigidBody3D
-StaticBody3D
-TextEdit
-Node
-VehicleWheel3D
-Camera3D
-VehicleBody3D

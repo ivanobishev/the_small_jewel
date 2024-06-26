@@ -1,14 +1,19 @@
 extends Node3D
 
-var open = false
+var closed = true
 
 func toggle():
-	if open:
-		$AnimationPlayer.play("close")
-		open = false
+	var tween = create_tween()
+	var current_rotation = rad_to_deg(rotation.y)
+	
+	print(current_rotation)
+	
+	if closed:
+		tween.tween_property($".", "rotation:y", deg_to_rad(current_rotation - 90), 3)
+		closed = false
 	else:
-		$AnimationPlayer.play("open")
-		open = true
+		tween.tween_property($".", "rotation:y", deg_to_rad(current_rotation + 90), 3)
+		closed = true
 
 func _input(event):
 	if event.is_action_pressed("action"):

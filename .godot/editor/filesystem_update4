@@ -1,6 +1,3 @@
-res://scenes/world.tscn
-res://scripts/gate.gd
 res://scenes/gate.tscn
-res://scenes/car.tscn
-res://scenes/tall_house.tscn
-res://scenes/rural_house.tscn
+res://scripts/gate.gd
+res://scenes/world.tscn
