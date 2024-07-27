@@ -11,4 +11,4 @@ size = Vector3(0.1, 2, 0.1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00747, 0)
 shape = SubResource("BoxShape3D_s27ax")
 
-[node name="stop_sign" parent="." instance=ExtResource("1_p2au2")]
+[node name="Asset" parent="." instance=ExtResource("1_p2au2")]

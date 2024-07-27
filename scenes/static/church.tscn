@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp61vpnrw1m77"]
+
+[ext_resource type="PackedScene" uid="uid://b04rybqb6x4ou" path="res://assets/church.blend" id="1_4ytbf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i848m"]
+size = Vector3(6.9769, 4, 7.05043)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f604t"]
+size = Vector3(2.44055, 4.92676, 2.41589)
+
+[node name="Church" type="StaticBody3D"]
+
+[node name="church" parent="." instance=ExtResource("1_4ytbf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0122223, 2, 0.0127182)
+shape = SubResource("BoxShape3D_i848m")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.33, 6.537, 2.35453)
+shape = SubResource("BoxShape3D_f604t")

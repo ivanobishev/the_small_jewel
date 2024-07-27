@@ -12,4 +12,4 @@ radius = 1.7
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CylinderShape3D_my3mb")
 
-[node name="fountain" parent="." instance=ExtResource("1_in7rq")]
+[node name="Asset" parent="." instance=ExtResource("1_in7rq")]
